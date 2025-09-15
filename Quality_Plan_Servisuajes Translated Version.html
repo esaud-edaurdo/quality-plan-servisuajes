@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Plan - SERVISUAJES S.A DE C.V</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --brand-blue: #005A9C; /* Main blue from logo */
+            --brand-orange: #F39200; /* Orange accent from logo */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .nav-link {
+            transition: color 0.2s, border-bottom-color 0.2s;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 4px;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--brand-blue);
+            border-bottom-color: var(--brand-blue);
+        }
+        h2 {
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+        details > summary {
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] > summary {
+            color: var(--brand-blue);
+        }
+        details[open] .arrow {
+            transform: rotate(90deg);
+        }
+        .arrow {
+            transition: transform 0.2s;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            text-align: left;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        th {
+            background-color: #f9fafb;
+            font-weight: 600;
+        }
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+        .icon-brand-color { color: var(--brand-blue); }
+        .text-brand-blue { color: var(--brand-blue); }
+        .text-brand-orange { color: var(--brand-orange); }
+
+        /* New Logo Text Style */
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 2.25rem; /* 36px */
+            line-height: 1;
+            color: var(--brand-blue);
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- LOGO AS STYLIZED TEXT -->
+            <h1 class="logo-text">SERVISUAJES</h1>
+            <div class="text-right">
+                <div class="flex items-center justify-end space-x-2 text-brand-blue">
+                    <i data-lucide="shield-check"></i>
+                    <span class="font-semibold">ISO 9001:2015 Compliant</span>
+                </div>
+                <p class="text-sm text-gray-500 mt-1">Quality Plan | Last Updated: 09/03/25</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-50 border-b border-gray-200">
+        <div class="container mx-auto px-6">
+            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500">
+                <li class="mr-2"><a href="#objective" class="nav-link inline-block p-4">Objective & Scope</a></li>
+                <li class="mr-2"><a href="#responsibilities" class="nav-link inline-block p-4">Responsibilities</a></li>
+                <li class="mr-2"><a href="#requirements" class="nav-link inline-block p-4">Requirements</a></li>
+                <li class="mr-2"><a href="#activities" class="nav-link inline-block p-4">Control Activities</a></li>
+                <li class="mr-2"><a href="#kpis" class="nav-link inline-block p-4">Indicators (KPIs)</a></li>
+                <li class="mr-2"><a href="#management" class="nav-link inline-block p-4">Management & Improvement</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8">
+
+        <!-- Objective & Scope Section -->
+        <section id="objective" class="mb-12 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-6 flex items-center"><i data-lucide="goal" class="mr-3 icon-brand-color"></i>Objective & Scope</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-brand-orange">Objective</h3>
+                    <p class="text-gray-600">To ensure that the processes of each department are standardized and suitable for their manufacturing processes, creating tools for the validation of each process, and ensuring that all manufactured products meet functional and technical requirements.</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-brand-orange">Scope</h3>
+                    <p class="text-gray-600 mb-4">This plan applies to the entire product development life cycle, from the receipt of the manufacturing request to the final delivery of the product, including the following processes:</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                        <li>Reception of manufacturing request.</li>
+                        <li>Response time for quotations and documentation.</li>
+                        <li>Product manufacturing planning.</li>
+                        <li>Process of obtaining raw materials and components.</li>
+                        <li>Design development.</li>
+                        <li>Laser cutting.</li>
+                        <li>CNC machining process for counter-plates.</li>
+                        <li>Component machining (if applicable).</li>
+                        <li>Die and/or tooling assembly process.</li>
+                        <li>Ejection rubber cutting and assembly process.</li>
+                        <li>Packaging and final product shipment process.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsibilities Section -->
+        <section id="responsibilities" class="mb-12 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-6 flex items-center"><i data-lucide="users" class="mr-3 icon-brand-color"></i>Departmental Responsibilities</h2>
+            <div class="space-y-4">
+                <div class="card overflow-hidden"><details><summary class="p-5 flex justify-between items-center"><div class="flex items-center"><i data-lucide="phone" class="w-7 h-7 icon-brand-color mr-4"></i><span class="font-semibold text-lg">Customer Service & Planning</span></div><i data-lucide="chevron-right" class="arrow"></i></summary><div class="px-5 pb-5 border-t border-gray-200"><p class="text-gray-700 mt-4"><strong>Customer Service:</strong> Responsible for receiving all information (technical, administrative, financial) from clients. Must ensure that personnel capture all obtained information in the system and supervise the fulfillment of their responsibilities.</p><ul class="list-disc list-inside text-gray-600 space-y-1 mt-2 pl-4"><li>Create manufacturing requests.</li><li>Obtain all information for product elaboration.</li><li>Provide financial information to accounting.</li><li>Capture all information in the system.</li><li>Notify planning about the request.</li></ul><p class="text-gray-700 mt-4"><strong>Planning:</strong> In charge of planning the manufacturing process, supplementing the request with technical data of the die (material, machine, stripping, observations, measurements, components, tolerances, base, cutting rules, dates, drawings, etc.). Must ensure the Work Order (WO) contains all necessary information for production.</p></div></details></div>
+                <div class="card overflow-hidden"><details><summary class="p-5 flex justify-between items-center"><div class="flex items-center"><i data-lucide="landmark" class="w-7 h-7 icon-brand-color mr-4"></i><span class="font-semibold text-lg">Accounting & Finance</span></div><i data-lucide="chevron-right" class="arrow"></i></summary><div class="px-5 pb-5 border-t border-gray-200"><p class="text-gray-700 mt-4"><strong>Accounting:</strong> Responsible for the company's accounting, ensuring the integrity, accuracy, and traceability of accounting records and compliance with fiscal and accounting regulations.</p><p class="text-gray-700 mt-4"><strong>Finance:</strong> Guarantees quality in the preparation of budgets, financial analysis, and strategic reports, ensuring data consistency for decision-making.</p></div></details></div>
+                <div class="card overflow-hidden"><details><summary class="p-5 flex justify-between items-center"><div class="flex items-center"><i data-lucide="shopping-cart" class="w-7 h-7 icon-brand-color mr-4"></i><span class="font-semibold text-lg">Purchasing/Warehouse</span></div><i data-lucide="chevron-right" class="arrow"></i></summary><div class="px-5 pb-5 border-t border-gray-200"><p class="text-gray-700 mt-4">Ensure the warehouse has all components and raw materials for manufacturing. Each component must meet the quality requirements of the technical sheets. Must ensure that suppliers comply with the imposed requirements, choosing the best quality-price option, and that stock is always covered.</p></div></details></div>
+                <div class="card overflow-hidden"><details><summary class="p-5 flex justify-between items-center"><div class="flex items-center"><i data-lucide="ruler" class="w-7 h-7 icon-brand-color mr-4"></i><span class="font-semibold text-lg">Engineering</span></div><i data-lucide="chevron-right" class="arrow"></i></summary><div class="px-5 pb-5 border-t border-gray-200"><p class="text-gray-700 mt-4">Responsible for the design, functionality, technical integrity of the product, and compliance with the quality standards of the client and the company. The department head must ensure that each designed product complies with regulations, continuously reviewing each manufactured product.</p></div></details></div>
+                <div class="card overflow-hidden"><details><summary class="p-5 flex justify-between items-center"><div class="flex items-center"><i data-lucide="scan-line" class="w-7 h-7 icon-brand-color mr-4"></i><span class="font-semibold text-lg">Laser Cutting</span></div><i data-lucide="chevron-right" class="arrow"></i></summary><div class="px-5 pb-5 border-t border-gray-200"><p class="text-gray-700 mt-4">Each product must leave with the proper conditions for the next process. The personnel are responsible for meeting quality standards by making necessary adjustments to parameters. The head must train the staff and supervise that each product meets the client's requirements.</p></div></details></div>
+                <div class="card overflow-hidden"><details><summary class="p-5 flex justify-between items-center"><div class="flex items-center"><i data-lucide="cog" class="w-7 h-7 icon-brand-color mr-4"></i><span class="font-semibold text-lg">Machining</span></div><i data-lucide="chevron-right" class="arrow"></i></summary><div class="px-5 pb-5 border-t border-gray-200"><p class="text-gray-700 mt-4">Ensure the dimensional quality of each product and the correct assembly, performing a detailed inspection of the drawings. The department head must ensure that the personnel have the necessary training for machinery operation, tools, and assembly.</p></div></details></div>
+                <div class="card overflow-hidden"><details><summary class="p-5 flex justify-between items-center"><div class="flex items-center"><i data-lucide="factory" class="w-7 h-7 icon-brand-color mr-4"></i><span class="font-semibold text-lg">Production</span></div><i data-lucide="chevron-right" class="arrow"></i></summary><div class="px-5 pb-5 border-t border-gray-200"><p class="text-gray-700 mt-4">Responsible for performing the proper assemblies, ensuring compliance with standards, managing time, and controlling defects. The head must ensure that the personnel are trained and that each product complies with: correct assembly, dimensional quality, machine handling, and times. Must maintain control of waste and defects.</p></div></details></div>
+                <div class="card overflow-hidden"><details><summary class="p-5 flex justify-between items-center"><div class="flex items-center"><i data-lucide="box-select" class="w-7 h-7 icon-brand-color mr-4"></i><span class="font-semibold text-lg">Ejection Rubber Assembly (Rubbering)</span></div><i data-lucide="chevron-right" class="arrow"></i></summary><div class="px-5 pb-5 border-t border-gray-200"><p class="text-gray-700 mt-4">Responsible for placing the appropriate ejection rubber on each product, adhering to the manufacturing request. The personnel must be able to design, operate cutting machines, and apply the rubber. The head must ensure training in software and machines.</p></div></details></div>
+                <div class="card overflow-hidden"><details><summary class="p-5 flex justify-between items-center"><div class="flex items-center"><i data-lucide="truck" class="w-7 h-7 icon-brand-color mr-4"></i><span class="font-semibold text-lg">Logistics</span></div><i data-lucide="chevron-right" class="arrow"></i></summary><div class="px-5 pb-5 border-t border-gray-200"><p class="text-gray-700 mt-4">Responsible for ensuring and verifying packaging, traceability, and delivery conditions. All vehicles must be inspected. The head must verify that the transportation is adequate and plan deliveries with the Planning department.</p></div></details></div>
+                <div class="card overflow-hidden"><details><summary class="p-5 flex justify-between items-center"><div class="flex items-center"><i data-lucide="wrench" class="w-7 h-7 icon-brand-color mr-4"></i><span class="font-semibold text-lg">Maintenance</span></div><i data-lucide="chevron-right" class="arrow"></i></summary><div class="px-5 pb-5 border-t border-gray-200"><p class="text-gray-700 mt-4">Perform preventive, corrective, and predictive maintenance to ensure machines are in optimal condition. Status reports for each machine must be created. The head must ensure that the personnel have the proper training and technical knowledge.</p></div></details></div>
+                <div class="card overflow-hidden"><details><summary class="p-5 flex justify-between items-center"><div class="flex items-center"><i data-lucide="users-2" class="w-7 h-7 icon-brand-color mr-4"></i><span class="font-semibold text-lg">Joint Responsibilities</span></div><i data-lucide="chevron-right" class="arrow"></i></summary><div class="px-5 pb-5 border-t border-gray-200"><p class="text-gray-700 mt-4">All departments must complete the product validation documentation (check-list). All heads must ensure and train their personnel in its completion. Additionally, they must create the necessary reports for manufactured products (components, wood, cutting rule, observations, etc.).</p></div></details></div>
+            </div>
+        </section>
+
+        <!-- Quality Requirements Section -->
+        <section id="requirements" class="mb-12 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-6 flex items-center"><i data-lucide="clipboard-list" class="mr-3 icon-brand-color"></i>Quality Requirements</h2>
+            <div class="card p-6">
+                <p class="text-lg text-center mb-6">To ensure that products, processes, and services comply with technical, regulatory, and customer satisfaction standards.</p>
+                <div class="space-y-4">
+                    <div><h3 class="font-semibold text-lg text-brand-orange border-b pb-2">Normative & Regulatory Requirements</h3><div class="pt-3 text-gray-600 space-y-2"><p><strong>ISO 9001:2015:</strong> Follow, update, and verify compliance with the standard, applying the PDCA (Plan-Do-Check-Act) cycle.</p><p><strong>Sector Regulation:</strong> Compliance with specific technical regulations, product safety, labeling, traceability, and environmental and labor standards (SEMARNAT, STPS).</p><p><strong>Legal:</strong> Current licenses, permits, and tax registrations. Compliance with occupational health, consumer protection, and civil liability regulations.</p></div></div>
+                    <div><h3 class="font-semibold text-lg text-brand-orange border-b pb-2">Technical Requirements</h3><div class="pt-3 text-gray-600 space-y-2"><p>Documentation for engineering and planning that specifies each design in detail (drawings, tolerances, materials). Establish standards for process parameters (laser cutting, machining, etc.). Implement quality control processes for receiving materials from suppliers.</p></div></div>
+                    <div><h3 class="font-semibold text-lg text-brand-orange border-b pb-2">Operational Requirements</h3><div class="pt-3 text-gray-600 space-y-2"><p>Verify the complete filling of documentation at each stage (WO, check-list, reports). Generate virtual traceability reports. Verify that production cycle times are met.</p></div></div>
+                    <div><h3 class="font-semibold text-lg text-brand-orange border-b pb-2">Customer Requirements</h3><div class="pt-3 text-gray-600 space-y-2"><p>Create technical manuals for clients with details on design, manufacturing, and delivery. Ensure that quality verification documents contain all technical aspects of the client. The customer satisfaction rate must be >= 85%.</p></div></div>
+                    <div><h3 class="font-semibold text-lg text-brand-orange border-b pb-2">Administrative & Financial Requirements</h3><div class="pt-3 text-gray-600 space-y-2"><p>Accuracy in accounting and financial records. Transparency in budgets, costs, and profitability analysis. Compliance with purchasing, payment, and budget control policies.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quality Control Activities Section -->
+        <section id="activities" class="mb-12 scroll-mt-24">
+             <h2 class="text-3xl font-bold mb-6 flex items-center"><i data-lucide="list-checks" class="mr-3 icon-brand-color"></i>Quality Control Activities</h2>
+             <div class="card overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table>
+                        <thead>
+                            <tr><th>Activity</th><th>Responsible</th><th>Frequency</th><th>Tools</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Product manufacturing planning.</td><td>Planning & Management</td><td>Each request</td><td>CAD, Check-list, manuals, manufacturing documents</td></tr>
+                            <tr><td>Inspect and verify that all designs meet quality standards.</td><td>Head of Engineering</td><td>Daily</td><td>Manuals, WO, CAD Software, Client instructions</td></tr>
+                            <tr><td>Ensure all laser machine products meet quality conditions and standards.</td><td>Head of Laser Cutting</td><td>Daily</td><td>Measurement tools, WO, manuals, drawings</td></tr>
+                            <tr><td>Ensure all machined parts and assemblies meet client requirements.</td><td>Head of Machining</td><td>Daily</td><td>Measurement tools, hand tools, machines, drawings</td></tr>
+                            <tr><td>Ensure, inspect, and guarantee the correct assembly of all products.</td><td>Head of Production</td><td>Daily</td><td>Measurement tools, drawings, WO, manuals, machines</td></tr>
+                            <tr><td>Perform designs, cutting, and application of ejection rubber.</td><td>Head of Rubbering</td><td>Daily</td><td>CAD Software, cutting machines, hand tools, drawings, WO</td></tr>
+                            <tr><td>Ensure correct transport and packaging of all products.</td><td>Head of Logistics</td><td>Daily</td><td>WO, Vehicles, packaging materials</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+             </div>
+        </section>
+
+        <!-- KPIs Section -->
+        <section id="kpis" class="mb-12 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-6 flex items-center"><i data-lucide="trending-up" class="mr-3 icon-brand-color"></i>Quality Indicators (KPIs)</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card overflow-hidden"><h3 class="text-lg font-semibold p-4 bg-gray-50 border-b text-brand-orange">Production & Process KPIs</h3><div class="overflow-x-auto"><table><thead><tr><th>Indicator</th><th>Formula</th><th>Target</th></tr></thead><tbody><tr><td>Rework Rate</td><td>(Reworked Products / Total Produced) × 100</td><td>&lt; 3%</td></tr><tr><td>First Time Quality (FTQ)</td><td>(Defect-Free Jobs / Total Inspected) × 100</td><td>&gt; 95%</td></tr><tr><td>Average Cycle Time</td><td>Total production time / Units produced</td><td>Optimized</td></tr><tr><td>Machine Availability</td><td>(Operating time / Total available time) × 100</td><td>&gt; 90%</td></tr></tbody></table></div></div>
+                <div class="card overflow-hidden"><h3 class="text-lg font-semibold p-4 bg-gray-50 border-b text-brand-orange">Material & Supplier Quality KPIs</h3><div class="overflow-x-auto"><table><thead><tr><th>Indicator</th><th>Formula</th><th>Target</th></tr></thead><tbody><tr><td>Non-Conformance Rate</td><td>(Rejected Materials / Total Received) × 100</td><td>&lt; 2%</td></tr><tr><td>Specification Compliance</td><td>(Conforming Orders / Total Orders) × 100</td><td>&gt; 98%</td></tr><tr><td>Lead Time</td><td>Days from order to reception</td><td>≤ agreed</td></tr></tbody></table></div></div>
+                <div class="card overflow-hidden"><h3 class="text-lg font-semibold p-4 bg-gray-50 border-b text-brand-orange">Design & Development KPIs</h3><div class="overflow-x-auto"><table><thead><tr><th>Indicator</th><th>Formula</th><th>Target</th></tr></thead><tbody><tr><td>Prototype Approval Rate</td><td>(Quotations & requested jobs / Number of products) × 100</td><td>&gt; 90%</td></tr><tr><td>Development Time</td><td>Days from start to validation</td><td>≤ schedule</td></tr><tr><td>Number of Engineering Changes</td><td>Total modifications per project</td><td>Controlled</td></tr></tbody></table></div></div>
+                <div class="card overflow-hidden"><h3 class="text-lg font-semibold p-4 bg-gray-50 border-b text-brand-orange">Logistics & Delivery KPIs</h3><div class="overflow-x-auto"><table><thead><tr><th>Indicator</th><th>Formula</th><th>Target</th></tr></thead><tbody><tr><td>On-Time Delivery (OTD)</td><td>(Delivered on time / Total orders) × 100</td><td>&gt; 95%</td></tr><tr><td>Return Rate</td><td>(Returned products / Delivered orders) × 100</td><td>&lt; 1%</td></tr><tr><td>Inventory Accuracy</td><td>(Recorded inventory / Physical inventory) × 100</td><td>&gt; 98%</td></tr></tbody></table></div></div>
+                <div class="card overflow-hidden"><h3 class="text-lg font-semibold p-4 bg-gray-50 border-b text-brand-orange">Administrative & Financial KPIs</h3><div class="overflow-x-auto"><table><thead><tr><th>Indicator</th><th>Formula</th><th>Target</th></tr></thead><tbody><tr><td>Accounting Accuracy</td><td>(Error-free records / Total records) × 100</td><td>&gt; 99%</td></tr><tr><td>Budget Compliance</td><td>(Actual spending / Budget) × 100</td><td>≤ 100%</td></tr><tr><td>Accounts Receivable Turnover</td><td>Net sales / Average accounts receivable</td><td>≥ standard</td></tr></tbody></table></div></div>
+            </div>
+        </section>
+
+        <!-- Management & Improvement Section -->
+        <section id="management" class="mb-12 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-6 flex items-center"><i data-lucide="shield-alert" class="mr-3 icon-brand-color"></i>Management & Improvement</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 flex items-center text-brand-orange"><i data-lucide="alert-triangle" class="mr-3 text-red-500"></i>Non-Conformity Management</h3>
+                    <div class="card p-6 h-full">
+                        <p class="text-gray-600 mb-4">All rejected products (internally or externally) will be recorded in a consecutive log, describing the reason and generating a report of expenses, processes, and personnel involved.</p>
+                        <p class="text-gray-600 font-semibold mb-2">Root Cause Analysis Tools:</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Ishikawa Diagram</span>
+                            <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">5 Whys</span>
+                            <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Pareto Analysis</span>
+                            <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">FTA Analysis</span>
+                        </div>
+                         <p class="text-gray-600">A corrective action will be generated with follow-up on the actions to be implemented and the problem.</p>
+                    </div>
+                </div>
+                <div>
+                     <h3 class="text-xl font-semibold mb-3 flex items-center text-brand-orange"><i data-lucide="sparkles" class="mr-3 text-yellow-500"></i>Continuous Improvement</h3>
+                    <div class="card p-6 h-full">
+                         <p class="text-gray-600 mb-4">Feedback meetings will be held on detected failures, rejected products, process improvement, and innovation. All improvements will be recorded and the corresponding documentation will be updated and distributed to personnel.</p>
+                         <p class="text-gray-600">Training will be sought in processes, machines, tools, and software. Continuous improvement will be led by the quality department, management, and direction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-6 py-4 text-center text-sm">
+            <p>&copy; 2025 SERVISUAJES S.A DE C.V - Confidential Quality Plan Document</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
